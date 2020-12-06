@@ -1,0 +1,1199 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	overflow-x: hidden;
+	width: 100vw;
+	height: 100vh;
+	text-align: justify;
+}
+
+html{
+	background-color: lightgrey;
+}
+
+nav .about p:nth-of-type(even){
+	opacity: 0.5;
+}
+
+p {
+	margin: 0;
+	display: inline;
+}
+
+nav p a{
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+	transform: rotate(-45deg);
+	transition: 1s;
+}
+
+nav p a:hover{
+	opacity: 0.25;
+}
+
+.highlight{
+	color: lightgrey;
+	background-color: black;
+}
+
+.memory .memory-text::selection{
+	background-color: dimgrey;
+}
+
+.current-tab{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.instructions-close-button,
+.about-close-button{
+	color: lightgrey;
+	background-color: black;
+}
+
+.about,
+.about-close-button,
+.instructions,
+.instructions-close-button{
+	display: none;
+	transition: 1s;
+	letter-spacing: 0pt;
+}
+
+.instructions-button:hover,
+.instructions-close-button:hover{
+	cursor: pointer;
+}
+
+.instructions-close-button:hover{
+	letter-spacing: 12pt;
+}
+
+.instructions,
+.instructions-close-button,
+.instructions-button,
+.random-button{
+	font-size: 24pt;
+}
+
+nav{
+	text-align-last: justify;
+	font-size: 12pt;
+	text-transform: uppercase;
+}
+
+nav>a,
+nav>span{
+	transition: 1s;
+	color: black;
+	text-decoration: none;
+}
+
+nav>a:hover,
+nav>span:hover{
+	letter-spacing: 12pt;
+}
+
+nav .about-button:hover,
+nav .about-close-button:hover{
+	cursor: pointer;
+}
+
+nav .about-close-button:hover{
+	letter-spacing: 12pt;
+}
+
+nav .about,
+nav .instructions{
+	text-transform: none;
+}
+
+figcaption, figure{
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+
+figure{
+	/*animation: load 0.5s ease-in;*/
+	display: none;
+}
+
+.instructions span{
+	display: inline-block;
+	animation: anchor-rotation 15s linear infinite ;
+}
+
+@keyframes anchor-rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.memory .drag-anchor{
+	cursor: move;
+	transition: 1s;
+	display: inline-block;
+	animation: anchor-rotation 15s linear infinite ;
+}
+
+/*.memory:nth-of-type(1) .drag-anchor{
+	color: green;
+}*/
+
+.memory:nth-of-type(1) .drag-anchor{
+	color: #dbf8f4;
+}
+
+.memory:nth-of-type(2) .drag-anchor{
+	color: #f5ee5f;
+}
+
+.memory:nth-of-type(3) .drag-anchor{
+	color: #efd6b8;
+}
+
+.memory:nth-of-type(4) .drag-anchor{
+	color: #a1c386;
+}
+
+.memory:nth-of-type(5) .drag-anchor{
+	color: #bdcde7;
+}
+
+.memory:nth-of-type(6) .drag-anchor{
+	color: #a8927b;
+}
+
+.memory:nth-of-type(7) .drag-anchor{
+	color: #fca266;
+}
+
+.memory:nth-of-type(8) .drag-anchor{
+	color: #c5e172;
+}
+
+.memory:nth-of-type(9) .drag-anchor{
+	color: #f7861c;
+}
+
+.memory:nth-of-type(10) .drag-anchor{
+	color: #f93f54;
+}
+
+.memory:nth-of-type(11) .drag-anchor{
+	color: #b1b2ac;
+}
+
+.memory:nth-of-type(12) .drag-anchor{
+	color: #77aff9;
+}
+
+.memory:nth-of-type(13) .drag-anchor{
+	color: #9b8d73;
+}
+
+.memory:nth-of-type(14) .drag-anchor{
+	color: #e9ee9e;
+}
+
+.memory:nth-of-type(15) .drag-anchor{
+	color: #6d8ada;
+}
+
+.memory:nth-of-type(16) .drag-anchor{
+	color: #f25b60;
+}
+
+.memory:nth-of-type(17) .drag-anchor{
+	color: #6f96d7;
+}
+
+.memory:nth-of-type(18) .drag-anchor{
+	color: #52d64f;
+}
+
+.memory:nth-of-type(19) .drag-anchor{
+	color: #bcb7b3;
+}
+
+.memory:nth-of-type(20) .drag-anchor{
+	color: #f3c89e;
+}
+
+.memory:nth-of-type(21) .drag-anchor{
+	color: #9cbafa;
+}
+
+.memory:nth-of-type(22) .drag-anchor{
+	color: #fb9438;
+}
+
+.memory:nth-of-type(23) .drag-anchor{
+	color: #c5defd;
+}
+
+.memory:nth-of-type(24) .drag-anchor{
+	color: #d86898;
+}
+
+.memory:nth-of-type(25) .drag-anchor{
+	color: #faaf76;
+}
+
+.memory:nth-of-type(26) .drag-anchor{
+	color: #d9e85b;
+}
+
+.memory:nth-of-type(27) .drag-anchor{
+	color: #fafeaa;
+}
+
+.memory:nth-of-type(28) .drag-anchor{
+	color: #d0dee9;
+}
+
+.memory:nth-of-type(29) .drag-anchor{
+	color: #c3e052;
+}
+
+.memory:nth-of-type(30) .drag-anchor{
+	color: #6281ad;
+}
+
+.memory:nth-of-type(31) .drag-anchor{
+	color: #b7afa2;
+}
+
+.memory:nth-of-type(32) .drag-anchor{
+	color: #e16a42;
+}
+
+.memory:nth-of-type(33) .drag-anchor{
+	color: #5688fb;
+}
+
+.memory:nth-of-type(34) .drag-anchor{
+	color: #daa72a;
+}
+
+.memory:nth-of-type(35) .drag-anchor{
+	color: #9a9fa2;
+}
+
+.memory:nth-of-type(36) .drag-anchor{
+	color: #d8cb9f;
+}
+
+.memory:nth-of-type(37) .drag-anchor{
+	color: #eae9ca;
+}
+
+.memory:nth-of-type(38) .drag-anchor{
+	color: #abcee1;
+}
+
+.memory:nth-of-type(39) .drag-anchor{
+	color: #ecc9a9;
+}
+
+.memory:nth-of-type(40) .drag-anchor{
+	color: #728b2f;
+}
+
+.memory:nth-of-type(41) .drag-anchor{
+	color: #d7a479;
+}
+
+.memory:nth-of-type(42) .drag-anchor{
+	color: #799656;
+}
+
+.memory:nth-of-type(43) .drag-anchor{
+	color: #2b49cf;
+}
+
+.memory:nth-of-type(44) .drag-anchor{
+	color: #e46a69;
+}
+
+.memory:nth-of-type(45) .drag-anchor{
+	color: #e6c2a8;
+}
+
+.memory:nth-of-type(46) .drag-anchor{
+	color: #8063a5;
+}
+
+.memory:nth-of-type(47) .drag-anchor{
+	color: #84a8e2;
+}
+
+.memory:nth-of-type(48) .drag-anchor{
+	color: #fb0439;
+}
+
+.memory:nth-of-type(49) .drag-anchor{
+	color: #7dae99;
+}
+
+.memory:nth-of-type(50) .drag-anchor{
+	color: #f75433;
+}
+
+.memory:nth-of-type(51) .drag-anchor{
+	color: #998d3b;
+}
+
+.memory:nth-of-type(52) .drag-anchor{
+	color: #f1bc86;
+}
+
+.memory:nth-of-type(53) .drag-anchor{
+	color: #a3d8ce;
+}
+
+.memory:nth-of-type(54) .drag-anchor{
+	color: #fc513f;
+}
+
+.memory:nth-of-type(55) .drag-anchor{
+	color: #54c1a2;
+}
+
+.memory:nth-of-type(56) .drag-anchor{
+	color: #feb34e;
+}
+
+.memory:nth-of-type(57) .drag-anchor{
+	color: #b6b3ae;
+}
+
+.memory:nth-of-type(58) .drag-anchor{
+	color: #718e4c;
+}
+
+.memory:nth-of-type(59) .drag-anchor{
+	color: #63c4fb;
+}
+
+.memory:nth-of-type(60) .drag-anchor{
+	color: #b09b7e;
+}
+
+.memory:nth-of-type(61) .drag-anchor{
+	color: #9f5d3b;
+}
+
+.memory:nth-of-type(62) .drag-anchor{
+	color: #28fb70;
+}
+
+.memory:nth-of-type(63) .drag-anchor{
+	color: #8ba5e0;
+}
+
+.memory:nth-of-type(64) .drag-anchor{
+	color: #85904e;
+}
+
+.memory:nth-of-type(65) .drag-anchor{
+	color: #9a9ea1;
+}
+
+.memory:nth-of-type(66) .drag-anchor{
+	color: #f4725a;
+}
+
+.memory:nth-of-type(67) .drag-anchor{
+	color: #d6c141;
+}
+
+.memory:nth-of-type(68) .drag-anchor{
+	color: #1288f2;
+}
+
+.memory:nth-of-type(69) .drag-anchor{
+	color: #f4c18c;
+}
+
+.memory:nth-of-type(70) .drag-anchor{
+	color: #df4253;
+}
+
+.memory:nth-of-type(71) .drag-anchor{
+	color: #77d47b;
+}
+
+.memory:nth-of-type(72) .drag-anchor{
+	color: #e3852d;
+}
+
+.memory:nth-of-type(73) .drag-anchor{
+	color: #f43f2c;
+}
+
+.memory:nth-of-type(74) .drag-anchor{
+	color: #939d69;
+}
+
+.memory:nth-of-type(75) .drag-anchor{
+	color: #d9cdc1;
+}
+
+.memory:nth-of-type(76) .drag-anchor{
+	color: #769be1;
+}
+
+.memory:nth-of-type(77) .drag-anchor{
+	color: #f3b675;
+}
+
+.memory:nth-of-type(78) .drag-anchor{
+	color: #76a8ff;
+}
+
+.memory:nth-of-type(79) .drag-anchor{
+	color: #e1b89c;
+}
+
+.memory:nth-of-type(80) .drag-anchor{
+	color: #889546;
+}
+
+.memory:nth-of-type(81) .drag-anchor{
+	color: #ebb27d;
+}
+
+.memory:nth-of-type(82) .drag-anchor{
+	color: #88aeef;
+}
+
+.memory:nth-of-type(83) .drag-anchor{
+	color: #dccdb0;
+}
+
+.memory:nth-of-type(84) .drag-anchor{
+	color: #e17c34;
+}
+
+.memory:nth-of-type(85) .drag-anchor{
+	color: #b0a9a3;
+}
+
+.memory:nth-of-type(86) .drag-anchor{
+	color: #43bb73;
+}
+
+.memory:nth-of-type(87) .drag-anchor{
+	color: #eab87b;
+}
+
+.memory:nth-of-type(88) .drag-anchor{
+	color: #ff7417;
+}
+
+.memory:nth-of-type(89) .drag-anchor{
+	color: #5b8bdf;
+}
+
+.memory:nth-of-type(90) .drag-anchor{
+	color: #99743d;
+}
+
+.memory:nth-of-type(91) .drag-anchor{
+	color: #508c82;
+}
+
+.memory:nth-of-type(92) .drag-anchor{
+	color: #dc3235;
+}
+
+.memory:nth-of-type(93) .drag-anchor{
+	color: #f09103;
+}
+
+.memory:nth-of-type(94) .drag-anchor{
+	color: #e7beac;
+}
+
+.memory:nth-of-type(95) .drag-anchor{
+	color: #eb4545;
+}
+
+.memory:nth-of-type(96) .drag-anchor{
+	color: #82b3ff;
+}
+
+.memory:nth-of-type(97) .drag-anchor{
+	color: #9ed249;
+}
+
+.memory:nth-of-type(98) .drag-anchor{
+	color: #efd7bf;
+}
+
+.memory:nth-of-type(99) .drag-anchor{
+	color: #a4993f;
+}
+
+.memory:nth-of-type(100) .drag-anchor{
+	color: #cba47d;
+}
+
+.memory:nth-of-type(101) .drag-anchor{
+	color: #729249;
+}
+
+.memory:nth-of-type(102) .drag-anchor{
+	color: #34b795;
+}
+
+.memory:nth-of-type(103) .drag-anchor{
+	color: #febf60;
+}
+
+.memory:nth-of-type(104) .drag-anchor{
+	color: #6a87bf;
+}
+
+.memory:nth-of-type(105) .drag-anchor{
+	color: #f7ae4f;
+}
+
+.memory:nth-of-type(106) .drag-anchor{
+	color: #1975a6;
+}
+
+.memory:nth-of-type(107) .drag-anchor{
+	color: #f4c172;
+}
+
+.memory:nth-of-type(108) .drag-anchor{
+	color: #eceddf;
+}
+
+.memory:nth-of-type(109) .drag-anchor{
+	color: #71b047;
+}
+
+.memory:nth-of-type(110) .drag-anchor{
+	color: #f9994c;
+}
+
+.memory:nth-of-type(111) .drag-anchor{
+	color: #e84653;
+}
+
+.memory:nth-of-type(112) .drag-anchor{
+	color: #d86898;
+}
+
+.memory:nth-of-type(113) .drag-anchor{
+	color: #ed5840;
+}
+
+.memory:nth-of-type(114) .drag-anchor{
+	color: #f7d210;
+}
+
+.memory:nth-of-type(115) .drag-anchor{
+	color: #c0cce6;
+}
+
+.memory:nth-of-type(116) .drag-anchor{
+	color: #bab385;
+}
+
+.memory:nth-of-type(117) .drag-anchor{
+	color: #ff4a51;
+}
+
+.memory:nth-of-type(118) .drag-anchor{
+	color: #e5d9bf;
+}
+
+.memory:nth-of-type(119) .drag-anchor{
+	color: #fe885a;
+}
+
+.memory:nth-of-type(120) .drag-anchor{
+	color: #f82e78;
+}
+
+.memory .drag-anchor:active + .memory-image{
+	display: none;
+}
+
+.memory .memory-image{
+	width: 100vw;
+	text-align: center;
+	font-size: 0;
+	opacity: 0;
+	z-index: -1;
+	position: fixed;
+	bottom: 0;
+	transition: 1s;
+  	white-space: nowrap;
+}
+
+.memory .memory-image img:nth-of-type(1){
+	display: none;
+}
+
+.memory .memory-image img {  
+	max-width: 50vw;
+}
+
+.memory:hover .memory-image{
+	opacity: 1;
+}
+
+@keyframes memory-fade-in{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+.memory .memory-text{
+	color: rgba(0,0,0,0.25);
+	background-color: transparent;
+	transition: 1s;
+	animation: memory-fade-in 1s linear;
+}
+
+.memory:hover .memory-text{
+	color: black;
+	background-color: yellow;
+	/*color on hover is always black, background color will change*/
+}
+
+.memory:nth-of-type(1):hover .memory-text{
+	background-color: #dbf8f4;
+}
+
+.memory:nth-of-type(2):hover .memory-text{
+	background-color: #f5ee5f;
+}
+
+.memory:nth-of-type(3):hover .memory-text{
+	background-color: #efd6b8;
+}
+
+.memory:nth-of-type(4):hover .memory-text{
+	background-color: #a1c386;
+}
+
+.memory:nth-of-type(5):hover .memory-text{
+	background-color: #bdcde7;
+}
+
+.memory:nth-of-type(6):hover .memory-text{
+	background-color: #a8927b;
+}
+
+.memory:nth-of-type(7):hover .memory-text{
+	background-color: #fca266;
+}
+
+.memory:nth-of-type(8):hover .memory-text{
+	background-color: #c5e172;
+}
+
+.memory:nth-of-type(9):hover .memory-text{
+	background-color: #f7861c;
+}
+
+.memory:nth-of-type(10):hover .memory-text{
+	background-color: #f93f54;
+}
+
+.memory:nth-of-type(11):hover .memory-text{
+	background-color: #b1b2ac;
+}
+
+.memory:nth-of-type(12):hover .memory-text{
+	background-color: #77aff9;
+}
+
+.memory:nth-of-type(13):hover .memory-text{
+	background-color: #9b8d73;
+}
+
+.memory:nth-of-type(14):hover .memory-text{
+	background-color: #e9ee9e;
+}
+
+.memory:nth-of-type(15):hover .memory-text{
+	background-color: #6d8ada;
+}
+
+.memory:nth-of-type(16):hover .memory-text{
+	background-color: #f25b60;
+}
+
+.memory:nth-of-type(17):hover .memory-text{
+	background-color: #6f96d7;
+}
+
+.memory:nth-of-type(18):hover .memory-text{
+	background-color: #52d64f;
+}
+
+.memory:nth-of-type(19):hover .memory-text{
+	background-color: #bcb7b3;
+}
+
+.memory:nth-of-type(20):hover .memory-text{
+	background-color: #f3c89e;
+}
+
+.memory:nth-of-type(21):hover .memory-text{
+	background-color: #9cbafa;
+}
+
+.memory:nth-of-type(22):hover .memory-text{
+	background-color: #fb9438;
+}
+
+.memory:nth-of-type(23):hover .memory-text{
+	background-color: #c5defd;
+}
+
+.memory:nth-of-type(24):hover .memory-text{
+	background-color: #d86898;
+}
+
+.memory:nth-of-type(25):hover .memory-text{
+	background-color: #faaf76;
+}
+
+.memory:nth-of-type(26):hover .memory-text{
+	background-color: #d9e85b;
+}
+
+.memory:nth-of-type(27):hover .memory-text{
+	background-color: #fafeaa;
+}
+
+.memory:nth-of-type(28):hover .memory-text{
+	background-color: #d0dee9;
+}
+
+.memory:nth-of-type(29):hover .memory-text{
+	background-color: #c3e052;
+}
+
+.memory:nth-of-type(30):hover .memory-text{
+	background-color: #6281ad;
+}
+
+.memory:nth-of-type(31):hover .memory-text{
+	background-color: #b7afa2;
+}
+
+.memory:nth-of-type(32):hover .memory-text{
+	background-color: #e16a42;
+}
+
+.memory:nth-of-type(33):hover .memory-text{
+	background-color: #5688fb;
+}
+
+.memory:nth-of-type(34):hover .memory-text{
+	background-color: #daa72a;
+}
+
+.memory:nth-of-type(35):hover .memory-text{
+	background-color: #9a9fa2;
+}
+
+.memory:nth-of-type(36):hover .memory-text{
+	background-color: #d8cb9f;
+}
+
+.memory:nth-of-type(37):hover .memory-text{
+	background-color: #eae9ca;
+}
+
+.memory:nth-of-type(38):hover .memory-text{
+	background-color: #abcee1;
+}
+
+.memory:nth-of-type(39):hover .memory-text{
+	background-color: #ecc9a9;
+}
+
+.memory:nth-of-type(40):hover .memory-text{
+	background-color: #728b2f;
+}
+
+.memory:nth-of-type(41):hover .memory-text{
+	background-color: #d7a479;
+}
+
+.memory:nth-of-type(42):hover .memory-text{
+	background-color: #799656;
+}
+
+.memory:nth-of-type(43):hover .memory-text{
+	background-color: #2b49cf;
+}
+
+.memory:nth-of-type(44):hover .memory-text{
+	background-color: #e46a69;
+}
+
+.memory:nth-of-type(45):hover .memory-text{
+	background-color: #e6c2a8;
+}
+
+.memory:nth-of-type(46):hover .memory-text{
+	background-color: #8063a5;
+}
+
+.memory:nth-of-type(47):hover .memory-text{
+	background-color: #84a8e2;
+}
+
+.memory:nth-of-type(48):hover .memory-text{
+	background-color: #fb0439;
+}
+
+.memory:nth-of-type(49):hover .memory-text{
+	background-color: #7dae99;
+}
+
+.memory:nth-of-type(50):hover .memory-text{
+	background-color: #f75433;
+}
+
+.memory:nth-of-type(51):hover .memory-text{
+	background-color: #998d3b;
+}
+
+.memory:nth-of-type(52):hover .memory-text{
+	background-color: #f1bc86;
+}
+
+.memory:nth-of-type(53):hover .memory-text{
+	background-color: #a3d8ce;
+}
+
+.memory:nth-of-type(54):hover .memory-text{
+	background-color: #fc513f;
+}
+
+.memory:nth-of-type(55):hover .memory-text{
+	background-color: #54c1a2;
+}
+
+.memory:nth-of-type(56):hover .memory-text{
+	background-color: #feb34e;
+}
+
+.memory:nth-of-type(57):hover .memory-text{
+	background-color: #b6b3ae;
+}
+
+.memory:nth-of-type(58):hover .memory-text{
+	background-color: #718e4c;
+}
+
+.memory:nth-of-type(59):hover .memory-text{
+	background-color: #63c4fb;
+}
+
+.memory:nth-of-type(60):hover .memory-text{
+	background-color: #b09b7e;
+}
+
+.memory:nth-of-type(61):hover .memory-text{
+	background-color: #9f5d3b;
+}
+
+.memory:nth-of-type(62):hover .memory-text{
+	background-color: #28fb70;
+}
+
+.memory:nth-of-type(63):hover .memory-text{
+	background-color: #8ba5e0;
+}
+
+.memory:nth-of-type(64):hover .memory-text{
+	background-color: #85904e;
+}
+
+.memory:nth-of-type(65):hover .memory-text{
+	background-color: #9a9ea1;
+}
+
+.memory:nth-of-type(66):hover .memory-text{
+	background-color: #f4725a;
+}
+
+.memory:nth-of-type(67):hover .memory-text{
+	background-color: #d6c141;
+}
+
+.memory:nth-of-type(68):hover .memory-text{
+	background-color: #1288f2;
+}
+
+.memory:nth-of-type(69):hover .memory-text{
+	background-color: #f4c18c;
+}
+
+.memory:nth-of-type(70):hover .memory-text{
+	background-color: #df4253;
+}
+
+.memory:nth-of-type(71):hover .memory-text{
+	background-color: #77d47b;
+}
+
+.memory:nth-of-type(72):hover .memory-text{
+	background-color: #e3852d;
+}
+
+.memory:nth-of-type(73):hover .memory-text{
+	background-color: #f43f2c;
+}
+
+.memory:nth-of-type(74):hover .memory-text{
+	background-color: #939d69;
+}
+
+.memory:nth-of-type(75):hover .memory-text{
+	background-color: #d9cdc1;
+}
+
+.memory:nth-of-type(76):hover .memory-text{
+	background-color: #769be1;
+}
+
+.memory:nth-of-type(77):hover .memory-text{
+	background-color: #f3b675;
+}
+
+.memory:nth-of-type(78):hover .memory-text{
+	background-color: #76a8ff;
+}
+
+.memory:nth-of-type(79):hover .memory-text{
+	background-color: #e1b89c;
+}
+
+.memory:nth-of-type(80):hover .memory-text{
+	background-color: #889546;
+}
+
+.memory:nth-of-type(81):hover .memory-text{
+	background-color: #ebb27d;
+}
+
+.memory:nth-of-type(82):hover .memory-text{
+	background-color: #88aeef;
+}
+
+.memory:nth-of-type(83):hover .memory-text{
+	background-color: #dccdb0;
+}
+
+.memory:nth-of-type(84):hover .memory-text{
+	background-color: #e17c34;
+}
+
+.memory:nth-of-type(85):hover .memory-text{
+	background-color: #b0a9a3;
+}
+
+.memory:nth-of-type(86):hover .memory-text{
+	background-color: #43bb73;
+}
+
+.memory:nth-of-type(87):hover .memory-text{
+	background-color: #eab87b;
+}
+
+.memory:nth-of-type(88):hover .memory-text{
+	background-color: #ff7417;
+}
+
+.memory:nth-of-type(89):hover .memory-text{
+	background-color: #5b8bdf;
+}
+
+.memory:nth-of-type(90):hover .memory-text{
+	background-color: #99743d;
+}
+
+.memory:nth-of-type(91):hover .memory-text{
+	background-color: #508c82;
+}
+
+.memory:nth-of-type(92):hover .memory-text{
+	background-color: #dc3235;
+}
+
+.memory:nth-of-type(93):hover .memory-text{
+	background-color: #f09103;
+}
+
+.memory:nth-of-type(94):hover .memory-text{
+	background-color: #e7beac;
+}
+
+.memory:nth-of-type(95):hover .memory-text{
+	background-color: #eb4545;
+}
+
+.memory:nth-of-type(96):hover .memory-text{
+	background-color: #82b3ff;
+}
+
+.memory:nth-of-type(97):hover .memory-text{
+	background-color: #9ed249;
+}
+
+.memory:nth-of-type(98):hover .memory-text{
+	background-color: #efd7bf;
+}
+
+.memory:nth-of-type(99):hover .memory-text{
+	background-color: #a4993f;
+}
+
+.memory:nth-of-type(100):hover .memory-text{
+	background-color: #cba47d;
+}
+
+.memory:nth-of-type(101):hover .memory-text{
+	background-color: #729249;
+}
+
+.memory:nth-of-type(102):hover .memory-text{
+	background-color: #34b795;
+}
+
+.memory:nth-of-type(103):hover .memory-text{
+	background-color: #febf60;
+}
+
+.memory:nth-of-type(104):hover .memory-text{
+	background-color: #6a87bf;
+}
+
+.memory:nth-of-type(105):hover .memory-text{
+	background-color: #f7ae4f;
+}
+
+.memory:nth-of-type(106):hover .memory-text{
+	background-color: #1975a6;
+}
+
+.memory:nth-of-type(107):hover .memory-text{
+	background-color: #f4c172;
+}
+
+.memory:nth-of-type(108):hover .memory-text{
+	background-color: #eceddf;
+}
+
+.memory:nth-of-type(109):hover .memory-text{
+	background-color: #71b047;
+}
+
+.memory:nth-of-type(110):hover .memory-text{
+	background-color: #f9994c;
+}
+
+.memory:nth-of-type(111):hover .memory-text{
+	background-color: #e84653;
+}
+
+.memory:nth-of-type(112):hover .memory-text{
+	background-color: #d86898;
+}
+
+.memory:nth-of-type(113):hover .memory-text{
+	background-color: #ed5840;
+}
+
+.memory:nth-of-type(114):hover .memory-text{
+	background-color: #f7d210;
+}
+
+.memory:nth-of-type(115):hover .memory-text{
+	background-color: #c0cce6;
+}
+
+.memory:nth-of-type(116):hover .memory-text{
+	background-color: #bab385;
+}
+
+.memory:nth-of-type(117):hover .memory-text{
+	background-color: #ff4a51;
+}
+
+.memory:nth-of-type(118):hover .memory-text{
+	background-color: #e5d9bf;
+}
+
+.memory:nth-of-type(119):hover .memory-text{
+	background-color: #fe885a;
+}
+
+.memory:nth-of-type(120):hover .memory-text{
+	background-color: #f82e78;
+}
+
+.memory .memory-text a{
+	display: inline-block;
+	text-decoration: none;
+	transform: rotate(-45deg);
+	color: rgba(0,0,0,0.25);
+	transition: 1s;
+}
+
+.memory:hover .memory-text a{
+	color: black;
+}
+
+.memory .memory-text a:hover{
+	opacity: 0.25;
+}
+
+.memory .memory-text mark{
+	color: rgba(0,0,0,0.5);
+	background-color: transparent;
+	transition: 1s;
+}
+
+.memory:hover .memory-text mark{
+	color: lightgrey;
+	background-color: black;
+}
+
+/*
+mobile view
+*/
+@media only screen and (max-width:480px) {
+	
+}
+
+/*
+tablet view
+*/
+@media only screen and (min-width: 481px) and (max-width:768px) {
+
+}
