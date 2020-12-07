@@ -715,12 +715,16 @@ main:hover .memory-text mark{
 mobile view
 */
 @media only screen and (max-width:480px) {
-	
+	.memory .memory-image img:nth-of-type(1){
+	display: none;
+}
 }
 
 /*
 tablet view
 */
 @media only screen and (min-width: 481px) and (max-width:768px) {
-
+	.memory .memory-image img:nth-of-type(1){
+	display: none;
+}
 }
