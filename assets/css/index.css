@@ -670,31 +670,7 @@ main:hover .memory-text mark{
 mobile view
 */
 @media only screen and (max-width:480px) {
-	main, nav{
-		display: inline;
-	}
 
-	.memory .memory-image img:nth-of-type(1){
-		display: none;
-	}
-
-	.memory .memory-image{
-		animation: none;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.memory .memory-image img {  
-		width: 100%;
-		height: auto;
-	}
-
-	nav>a:hover,
-	nav>span:hover,
-	nav .about-close-button:hover{
-		letter-spacing: 3pt;
-	}
 }
 
 /*
@@ -705,20 +681,23 @@ tablet view
 		display: inline;
 	}
 	
-	.memory .memory-image img:nth-of-type(1){
+	/*.memory .memory-image img:nth-of-type(1){
 		display: none;
-	}
+	}*/
 
 	.memory .memory-image{
-		animation: none;
-		display: flex;
+		display: none;
 		align-items: center;
 		justify-content: center;
 	}
 
+	.memory:hover .memory-image{
+		display: block;
+	}
+
 	.memory .memory-image img {  
-		width: 100%;
-		height: auto;
+		/*min-width: 100vw;
+		height: 100vh;*/
 	}
 
 	nav>a:hover,
