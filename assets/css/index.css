@@ -183,6 +183,7 @@ nav a{
 .memory .memory-image img {  
 	min-width: 100vw;
 	height: 100vh;
+	display: none;
 }
 
 .memory:hover .memory-image{
