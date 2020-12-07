@@ -1,3 +1,8 @@
+.highlight{
+	color: lightgrey;
+	background-color: black;
+}
+
 html, body{
 	padding: 0;
 	margin: 0;
@@ -12,70 +17,19 @@ html{
 	background-color: lightgrey;
 }
 
-nav .about p:nth-of-type(even){
-	opacity: 0.5;
-}
-
-p {
-	margin: 0;
-	display: inline;
-}
-
-nav p a{
-	color: black;
-	display: inline-block;
-	text-decoration: none;
-	transform: rotate(-45deg);
-	transition: 1s;
-}
-
-nav p a:hover{
-	opacity: 0.25;
-}
-
-.highlight{
-	color: lightgrey;
-	background-color: black;
-}
-
-.memory .memory-text::selection{
-	background-color: dimgrey;
-}
-
-.current-tab{
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-.instructions-close-button,
-.about-close-button{
-	color: lightgrey;
-	background-color: black;
-}
-
-.about,
-.about-close-button,
-.instructions,
-.instructions-close-button{
+.mobile-message{
 	display: none;
+}
+
+.mobile-message a{
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
 	transition: 1s;
-	letter-spacing: 0pt;
 }
 
-.instructions-button:hover,
-.instructions-close-button:hover{
-	cursor: pointer;
-}
-
-.instructions-close-button:hover{
-	letter-spacing: 12pt;
-}
-
-.instructions,
-.instructions-close-button,
-.instructions-button,
-.random-button{
-	font-size: 24pt;
+.mobile-message a:hover{
+	letter-spacing: 3pt;
 }
 
 nav{
@@ -93,7 +47,7 @@ nav>span{
 
 nav>a:hover,
 nav>span:hover{
-	letter-spacing: 12pt;
+	letter-spacing: 6pt;
 }
 
 nav .about-button:hover,
@@ -102,12 +56,69 @@ nav .about-close-button:hover{
 }
 
 nav .about-close-button:hover{
-	letter-spacing: 12pt;
+	letter-spacing: 6pt;
+}
+
+nav .about p:nth-of-type(even){
+	opacity: 0.5;
+}
+
+p {
+	margin: 0;
+	display: inline;
+}
+
+nav .about p a{
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+	transform: rotate(-45deg);
+	transition: 1s;
+}
+
+nav .about p a:hover{
+	opacity: 0.25;
+}
+
+nav .about,
+nav .about-close-button,
+nav .instructions,
+nav .instructions-close-button{
+	display: none;
+	transition: 1s;
+	letter-spacing: 0pt;
+}
+
+nav .instructions-close-button,
+nav .about-close-button{
+	color: lightgrey;
+	background-color: black;
+}
+
+nav .instructions-button:hover,
+nav .instructions-close-button:hover{
+	cursor: pointer;
+}
+
+nav .instructions-close-button:hover{
+	letter-spacing: 6pt;
+}
+
+nav .instructions,
+nav .instructions-close-button,
+nav .instructions-button,
+nav .random-button{
+	font-size: 24pt;
 }
 
 nav .about,
 nav .instructions{
 	text-transform: none;
+}
+
+nav .current-tab{
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 figcaption, figure{
@@ -117,11 +128,10 @@ figcaption, figure{
 }
 
 figure{
-	/*animation: load 0.5s ease-in;*/
 	display: none;
 }
 
-.instructions span{
+nav .instructions span{
 	display: inline-block;
 	animation: anchor-rotation 15s linear infinite ;
 }
@@ -142,9 +152,9 @@ figure{
 	animation: anchor-rotation 15s linear infinite ;
 }
 
-/*.memory:nth-of-type(1) .drag-anchor{
-	color: green;
-}*/
+.memory .memory-text::selection{
+	background-color: dimgrey;
+}
 
 .memory:nth-of-type(1) .drag-anchor{
 	color: #dbf8f4;
@@ -630,6 +640,10 @@ figure{
 	display: none;
 }
 
+.memory .drag-anchor:hover{
+	color: black;
+}
+
 .memory .memory-image{
 	width: 100vw;
 	text-align: center;
@@ -673,7 +687,6 @@ figure{
 
 .memory:hover .memory-text{
 	color: black;
-	background-color: yellow;
 	/*color on hover is always black, background color will change*/
 }
 
@@ -1188,12 +1201,24 @@ figure{
 mobile view
 */
 @media only screen and (max-width:480px) {
-	
+	main, nav{
+		display: none;
+	}
+
+	.mobile-message{
+		display: block;
+	}
 }
 
 /*
 tablet view
 */
 @media only screen and (min-width: 481px) and (max-width:768px) {
+	main, nav{
+		display: none;
+	}
 
+	.mobile-message{
+		display: block;
+	}
 }
