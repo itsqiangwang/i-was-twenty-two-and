@@ -13,6 +13,7 @@ html{
 }
 
 .mobile-message{
+	color: lightgrey;
 	display: none;
 }
 
@@ -102,10 +103,6 @@ figcaption, figure{
 	display: inline;
 }
 
-figure{
-	animation: load 0.5s ease-in;
-}
-
 @keyframes load {
 	0% {
 		opacity: 0;
@@ -115,12 +112,29 @@ figure{
 	}
 }
 
+figure{
+	animation: load 0.5s ease-in;
+}
+
 @keyframes eternal-slider {
 	0% {
-		transform: translate(0, -50%);
+		transform: translate(0,-50%);
+		-webkit-transform: translate(0,-50%);
 	}
 	100% {
-		transform: translate(-100%, -50%);
+		transform: translate(-100%,-50%);
+		-webkit-transform: translate(-100%,-50%);
+	}
+}
+
+@-webkit-keyframes eternal-slider {
+	0% {
+		transform: translate(0,-50%);
+		-webkit-transform: translate(0,-50%);
+	}
+	100% {
+		transform: translate(-100%,-50%);
+		-webkit-transform: translate(-100%,-50%);
 	}
 }
 
@@ -134,6 +148,7 @@ figure{
 	transition: 1s;
 	white-space: nowrap;
 	animation: eternal-slider 30s linear infinite;
+	-webkit-animation: eternal-slider 30s linear infinite;
 }
 
 .memory .memory-image img {  
@@ -146,7 +161,7 @@ figure{
 }
 
 .memory .memory-text{
-	color: rgba(255,255,255,0.25);
+	color: rgba(0,0,0,0.25);
 	background-color: transparent;
 	transition: 1s;
 	display: inline;
@@ -640,7 +655,7 @@ figure{
 	display: inline-block;
 	text-decoration: none;
 	transform: rotate(-45deg);
-	color: rgba(255,255,255,0.25);
+	color: rgba(0,0,0,0.25);
 	transition: 1s;
 }
 
@@ -659,8 +674,12 @@ figure{
 }
 
 main:hover .memory-text mark{
-	color: rgba(255,255,255,0.5);
+	color: rgba(0,0,0,0.5);
 	background-color: transparent;
+}
+
+main:hover .memory-text{
+	color: rgba(0,0,0,0.25);
 }
 
 .memory:hover .memory-text mark{
@@ -683,14 +702,12 @@ tablet view
 		display: inline;
 	}
 	
-	.memory .memory-image img:nth-of-type(1){
+	/*.memory .memory-image img:nth-of-type(1){
 		display: none;
-	}
+	}*/
 
 	.memory .memory-image{
 		display: none;
-		align-items: center;
-		justify-content: center;
 	}
 
 	.memory:hover .memory-image{
@@ -702,4 +719,17 @@ tablet view
 	nav .about-close-button:hover{
 		letter-spacing: 3pt;
 	}
+
+	/*.memory .memory-image{
+		animation: none;
+		transform: translateY(-50%);
+	}*/
+
+	/*main, nav{
+		display: none;
+	}
+
+	.mobile-message{
+		display: block;
+	}*/
 }
