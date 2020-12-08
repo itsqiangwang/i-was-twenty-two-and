@@ -14,22 +14,11 @@ html, body{
 }
 
 html{
-	background-color: lightgrey;
+	background-color: black;
 }
 
 .mobile-message{
 	display: none;
-}
-
-.mobile-message a{
-	color: black;
-	text-decoration: none;
-	text-transform: uppercase;
-	transition: 1s;
-}
-
-.mobile-message a:hover{
-	letter-spacing: 3pt;
 }
 
 nav{
@@ -661,7 +650,7 @@ nav .instructions span{
 }
 
 .memory .memory-image img {  
-	max-width: 50vw;
+	max-height: 25vh;
 }
 
 .memory:hover .memory-image{
