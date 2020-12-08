@@ -127,7 +127,7 @@ figure{
 	}
 }
 
-@-webkit-keyframes eternal-slider {
+/*@-webkit-keyframes eternal-slider {
 	0% {
 		transform: translate(0,-50%);
 		-webkit-transform: translate(0,-50%);
@@ -136,7 +136,7 @@ figure{
 		transform: translate(-100%,-50%);
 		-webkit-transform: translate(-100%,-50%);
 	}
-}
+}*/
 
 .memory .memory-image{
 	font-size: 0;
@@ -148,7 +148,7 @@ figure{
 	transition: 1s;
 	white-space: nowrap;
 	animation: eternal-slider 30s linear infinite;
-	-webkit-animation: eternal-slider 30s linear infinite;
+	/*-webkit-animation: eternal-slider 30s linear infinite;*/
 }
 
 .memory .memory-image img {  
