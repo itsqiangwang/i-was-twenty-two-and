@@ -702,14 +702,6 @@ mobile view
 		display: inline;
 	}
 
-	.memory .memory-image{
-		display: none;
-	}
-
-	.memory:hover .memory-image{
-		display: block;
-	}
-
 	nav>a:hover,
 	nav>a:active,
 	nav>span:hover,
@@ -717,6 +709,10 @@ mobile view
 	nav .about-close-button:hover,
 	nav .about-close-button:active{
 		letter-spacing: 3pt;
+	}
+
+	.mobile-message{
+		display: inline;
 	}
 }
 
@@ -726,14 +722,6 @@ tablet view
 @media only screen and (min-width: 481px) and (max-width:768px) {
 	main, nav{
 		display: inline;
-	}
-
-	.memory .memory-image{
-		display: none;
-	}
-
-	.memory:hover .memory-image{
-		display: block;
 	}
 
 	nav>a:hover,
