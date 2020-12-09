@@ -132,24 +132,11 @@ figure{
 	animation: load 0.5s ease-in;
 }
 
-@keyframes eternal-slider {
-	0% {
-		transform: translate(0,-50%);
-		-webkit-transform: translate(0,-50%);
-		-ms-transform: translate(0,-50%);
-		-moz-transform: translate(0,-50%);
-		-o-transform: translate(0,-50%);
-	}
-	100% {
-		transform: translate(-100%,-50%);
-		-webkit-transform: translate(-100%,-50%);
-		-ms-transform: translate(-100%,-50%);
-		-moz-transform: translate(-100%,-50%);
-		-o-transform: translate(-100%,-50%);
-	}
+.memory .memory-image img:nth-of-type(1){
+	display: none;
 }
 
-@-webkit-keyframes eternal-slider {
+@keyframes eternal-slider {
 	0% {
 		transform: translate(0,-50%);
 		-webkit-transform: translate(0,-50%);
@@ -168,7 +155,7 @@ figure{
 
 .memory .memory-image{
 	font-size: 0;
-	opacity: 0;
+	display: none;
 	z-index: -1;
 	position: fixed;
 	top: 50%;
@@ -194,7 +181,7 @@ figure{
 
 .memory:hover .memory-image,
 .memory:active .memory-image{
-	opacity: 1;
+	display: block;
 }
 
 .memory .memory-text{
