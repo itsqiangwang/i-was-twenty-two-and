@@ -10,6 +10,11 @@ html, body{
 
 html{
 	background-color: black;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .mobile-message{
@@ -691,20 +696,9 @@ main:hover .memory-text{
 mobile view
 */
 @media only screen and (max-width:480px) {
-
-}
-
-/*
-tablet view
-*/
-@media only screen and (min-width: 481px) and (max-width:768px) {
 	main, nav{
 		display: inline;
 	}
-	
-	/*.memory .memory-image img:nth-of-type(1){
-		display: none;
-	}*/
 
 	.memory .memory-image{
 		display: none;
@@ -719,17 +713,27 @@ tablet view
 	nav .about-close-button:hover{
 		letter-spacing: 3pt;
 	}
+}
 
-	/*.memory .memory-image{
-		animation: none;
-		transform: translateY(-50%);
-	}*/
+/*
+tablet view
+*/
+@media only screen and (min-width: 481px) and (max-width:768px) {
+	main, nav{
+		display: inline;
+	}
 
-	/*main, nav{
+	.memory .memory-image{
 		display: none;
 	}
 
-	.mobile-message{
+	.memory:hover .memory-image{
 		display: block;
-	}*/
+	}
+
+	nav>a:hover,
+	nav>span:hover,
+	nav .about-close-button:hover{
+		letter-spacing: 3pt;
+	}
 }
