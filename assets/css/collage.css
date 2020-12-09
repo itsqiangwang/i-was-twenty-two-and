@@ -33,6 +33,11 @@ html{
 	letter-spacing: 3pt;
 }
 
+nav,
+main{
+	display: inline;
+}
+
 nav{
 	text-align-last: justify;
 	font-size: 12pt;
@@ -110,7 +115,7 @@ nav .instructions,
 nav .instructions-close-button,
 nav .instructions-button,
 nav .random-button{
-	font-size: 24pt;
+	font-size: 12pt;
 }
 
 nav .about,

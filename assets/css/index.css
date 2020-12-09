@@ -22,6 +22,11 @@ html{
 	display: none;
 }
 
+nav,
+main{
+	display: inline;
+}
+
 nav{
 	text-align-last: justify;
 	font-size: 12pt;
@@ -131,10 +136,33 @@ figure{
 	0% {
 		transform: translate(0,-50%);
 		-webkit-transform: translate(0,-50%);
+		-ms-transform: translate(0,-50%);
+		-moz-transform: translate(0,-50%);
+		-o-transform: translate(0,-50%);
 	}
 	100% {
 		transform: translate(-100%,-50%);
 		-webkit-transform: translate(-100%,-50%);
+		-ms-transform: translate(-100%,-50%);
+		-moz-transform: translate(-100%,-50%);
+		-o-transform: translate(-100%,-50%);
+	}
+}
+
+@-webkit-keyframes eternal-slider {
+	0% {
+		transform: translate(0,-50%);
+		-webkit-transform: translate(0,-50%);
+		-ms-transform: translate(0,-50%);
+		-moz-transform: translate(0,-50%);
+		-o-transform: translate(0,-50%);
+	}
+	100% {
+		transform: translate(-100%,-50%);
+		-webkit-transform: translate(-100%,-50%);
+		-ms-transform: translate(-100%,-50%);
+		-moz-transform: translate(-100%,-50%);
+		-o-transform: translate(-100%,-50%);
 	}
 }
 
@@ -147,7 +175,16 @@ figure{
 	left: 0;
 	transition: 1s;
 	white-space: nowrap;
-	animation: eternal-slider 30s linear infinite;
+	transform: translate(0,-50%);
+	-webkit-transform: translate(0,-50%);
+	-ms-transform: translate(0,-50%);
+	-moz-transform: translate(0,-50%);
+	-o-transform: translate(0,-50%);
+	/*animation: eternal-slider 30s linear infinite;
+	-webkit-animation: eternal-slider 30s linear infinite;
+	-ms-animation: eternal-slider 30s linear infinite;
+	-moz-animation: eternal-slider 30s linear infinite;
+	-o-animation: eternal-slider 30s linear infinite;*/
 }
 
 .memory .memory-image img {  
@@ -698,10 +735,6 @@ main:active .memory-text{
 mobile view
 */
 @media only screen and (max-width:480px) {
-	main, nav{
-		display: inline;
-	}
-
 	nav>a:hover,
 	nav>a:active,
 	nav>span:hover,
@@ -720,10 +753,6 @@ mobile view
 tablet view
 */
 @media only screen and (min-width: 481px) and (max-width:768px) {
-	main, nav{
-		display: inline;
-	}
-
 	nav>a:hover,
 	nav>a:active,
 	nav>span:hover,
