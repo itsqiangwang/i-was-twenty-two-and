@@ -18,7 +18,7 @@ html{
 }
 
 .mobile-message{
-	color: lightgrey;
+	background-color: lightgrey;
 	display: none;
 }
 
@@ -36,7 +36,9 @@ nav a{
 }
 
 nav>span:hover,
-nav>a:hover{
+nav>span:active,
+nav>a:hover,
+nav>a:active{
 	letter-spacing: 6pt;
 }
 
@@ -59,11 +61,14 @@ nav .about-close-button{
 }
 
 nav .about-button:hover,
-nav .about-close-button:hover{
+nav .about-close-button:hover,
+nav .about-button:active,
+nav .about-close-button:active{
 	cursor: pointer;
 }
 
-nav .about-close-button:hover{
+nav .about-close-button:hover,
+nav .about-close-button:active{
 	letter-spacing: 6pt;
 }
 
@@ -90,7 +95,8 @@ nav .about p a{
 	transition: 1s;
 }
 
-nav .about p a:hover{
+nav .about p a:hover,
+nav .about p a:active{
 	opacity: 0.25;
 }
 
@@ -132,17 +138,6 @@ figure{
 	}
 }
 
-/*@-webkit-keyframes eternal-slider {
-	0% {
-		transform: translate(0,-50%);
-		-webkit-transform: translate(0,-50%);
-	}
-	100% {
-		transform: translate(-100%,-50%);
-		-webkit-transform: translate(-100%,-50%);
-	}
-}*/
-
 .memory .memory-image{
 	font-size: 0;
 	opacity: 0;
@@ -153,7 +148,6 @@ figure{
 	transition: 1s;
 	white-space: nowrap;
 	animation: eternal-slider 30s linear infinite;
-	/*-webkit-animation: eternal-slider 30s linear infinite;*/
 }
 
 .memory .memory-image img {  
@@ -161,7 +155,8 @@ figure{
 	height: auto;
 }
 
-.memory:hover .memory-image{
+.memory:hover .memory-image,
+.memory:active .memory-image{
 	opacity: 1;
 }
 
@@ -172,11 +167,13 @@ figure{
 	display: inline;
 }
 
-.memory:hover .memory-text{
+.memory:hover .memory-text,
+.memory:active .memory-text{
 	color: black;
 }
 
-.memory:nth-of-type(1):hover .memory-text{
+.memory:nth-of-type(1):hover .memory-text,
+.memory:nth-of-type(1):active .memory-text{
 	background-color: #dbf8f4;
 }
 
@@ -664,11 +661,13 @@ figure{
 	transition: 1s;
 }
 
-.memory .memory-text a:hover{
+.memory .memory-text a:hover,
+.memory .memory-text a:active{
 	opacity: 0.25;
 }
 
-.memory:hover .memory-text a{
+.memory:hover .memory-text a,
+.memory:active .memory-text a{
 	color: black;
 }
 
@@ -678,16 +677,19 @@ figure{
 	background-color: lightgrey;
 }
 
-main:hover .memory-text mark{
+main:hover .memory-text mark,
+main:active .memory-text mark{
 	color: rgba(0,0,0,0.5);
 	background-color: transparent;
 }
 
-main:hover .memory-text{
+main:hover .memory-text,
+main:active .memory-text{
 	color: rgba(0,0,0,0.25);
 }
 
-.memory:hover .memory-text mark{
+.memory:hover .memory-text mark,
+.memory:active .memory-text mark{
 	color: lightgrey;
 	background-color: black;
 }
@@ -709,8 +711,11 @@ mobile view
 	}
 
 	nav>a:hover,
+	nav>a:active,
 	nav>span:hover,
-	nav .about-close-button:hover{
+	nav>span:active,
+	nav .about-close-button:hover,
+	nav .about-close-button:active{
 		letter-spacing: 3pt;
 	}
 }
@@ -732,8 +737,15 @@ tablet view
 	}
 
 	nav>a:hover,
+	nav>a:active,
 	nav>span:hover,
-	nav .about-close-button:hover{
+	nav>span:active,
+	nav .about-close-button:hover,
+	nav .about-close-button:active{
 		letter-spacing: 3pt;
+	}
+
+	.mobile-message{
+		display: inline;
 	}
 }
