@@ -36,7 +36,6 @@ $(document).ready(function () {
 
         }
 
-
         if (anchorTag.className === "highlight" && focusTag.className === 'highlight' && !highlighted) {
             highlighted = true;
 

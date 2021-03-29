@@ -634,12 +634,36 @@ hover background color for each piece of text
 mobile view
 */
 @media only screen and (max-width:480px) {
+	.memory .memory-image{
+		animation: none;
+		transform: translate(0,-50%);
+		-webkit-transform: translate(0,-50%);
+		-ms-transform: translate(0,-50%);
+		-moz-transform: translate(0,-50%);	
+		-o-transform: translate(0,-50%);
+	}
 
+	.memory .memory-image img {  
+		width: 100vw;
+		height: auto;
+	}
 }
 
 /*
 tablet view
 */
 @media only screen and (min-width: 481px) and (max-width:768px) {
+	.memory .memory-image{
+		animation: none;
+		transform: translate(0,-50%);
+		-webkit-transform: translate(0,-50%);
+		-ms-transform: translate(0,-50%);
+		-moz-transform: translate(0,-50%);	
+		-o-transform: translate(0,-50%);
+	}
 
+	.memory .memory-image img {  
+		width: 100vw;
+		height: auto;
+	}
 }
