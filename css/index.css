@@ -67,8 +67,7 @@ sliding images
 
 .memory .memory-image{
 	font-size: 0;
-	/* display: none; */
-	opacity: 0;
+	display: none;
 	z-index: -1;
 	position: fixed;
 	top: 50%;
@@ -85,7 +84,6 @@ sliding images
 .memory:hover .memory-image,
 .memory:active .memory-image{
 	display: block;
-	opacity: 1;
 }
 
 .memory .memory-image img {  
